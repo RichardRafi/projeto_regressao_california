@@ -1,4 +1,4 @@
-name: av_machine_learning
+name: machine_learning
 channels:
   - conda-forge
   - defaults
