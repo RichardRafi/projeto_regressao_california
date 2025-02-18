@@ -24,4 +24,7 @@ A variável alvo é o valor mediano das casas para os distritos da Califórnia, 
   - `NEAR OCEAN`: perto do oceano
   - `ISLAND`: ilha
 - `median_house_value`: valor mediano das casas no grupo de blocos (em dólares)
+-
+-
+-
 
