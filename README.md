@@ -16,9 +16,9 @@ Por exemplo, a cidade de Los Angeles pertence ao condado homônimo. No entanto, 
 
 A primeira etapa do projeto envolveu a limpeza e preparação dos dados. Foram verificadas a presença de valores nulos e duplicados, além da criação de novas variáveis, como:
 
-- rooms_per_household: média de quartos por residência,
-- people_per_household: média de pessoas por residência,
-- bedrooms_per_room: proporção de quartos por cômodo.
+- `rooms_per_household`: média de quartos por residência,
+- `people_per_household`: média de pessoas por residência,
+- `bedrooms_per_room`: proporção de quartos por cômodo.
 
 Além disso, foram removidos valores extremamente discrepantes e ajustados os tipos de dados das colunas, garantindo melhor organização da base. Alguns outliers foram mantidos para evitar comprometer a integridade dos resultados e a eficácia do modelo.
 
@@ -34,7 +34,7 @@ Para a modelagem preditiva, foram desenvolvidos pipelines de processamento para 
  
 A escolha final do modelo foi baseada em métricas como RMSE (Root Mean Squared Error) e R² (coeficiente de determinação), garantindo um equilíbrio entre viés e variância para previsões mais precisas.
 
-### 3. Construção de um aplicativo no streamlit:
+# 3. Construção de um aplicativo no streamlit:
 
 Para tornar a análise mais acessível, desenvolvemos uma aplicação interativa utilizando Streamlit. O código foi implementado no arquivo home.py, permitindo que o usuário:
 - Selecione um condado (ex: Los Angeles),
@@ -98,13 +98,13 @@ Por fim, será implementada uma otimização no comportamento do mapa interativo
 
 2. Crie um ambiente virtual para o seu projeto utilizando o gerenciador de ambientes de sua preferência.
 
-    a. Caso esteja utilizando o `conda`, exporte as dependências do ambiente para o arquivo `ambiente.yml`:
+    a. Caso esteja utilizando o `conda`, exporte as dependências do ambiente para o arquivo `enviroment.yml`:
 
-      ```bash
-      pip freeze > requirements.txt
-      ```
+2. Crie um ambiente virtual para o seu projeto utilizando o 'conda'.
 
-    b. Caso esteja utilizando outro gerenciador de ambientes, exporte as dependências
-    para o arquivo `requirements.txt` ou outro formato de sua preferência. Adicione o
-    arquivo ao controle de versão, removendo o arquivo `ambiente.yml`.
 
+    ```bash
+    conda env create -f enviroment.yml --name av_machine_learning
+    ```
+
+Nota: Caso haja problemas para exportar o arquivo `environment.yml` para o cloud da Streamlit, utilize o requirements.txt no lugar para não ocorrer problemas na execução do aplicativo.
